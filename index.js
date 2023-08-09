@@ -6,61 +6,134 @@ const gold = document.querySelector('#color2')
 const silver = document.querySelector('#color3')
 const black = document.querySelector('#color4')
 
+// Enter
+purple.onmouseenter = () => {
+    colors.innerText = " - Deep Purple"
+} 
+
+gold.onmouseenter = () => {
+    colors.innerText = " - Gold"
+}
+
+silver.onmouseenter = () => {
+    colors.innerText = " - Silver"
+}
+
+black.onmouseenter = () => {
+    colors.innerText = " - Space Black"
+}
+
+
 purple.onclick = () => {
-    colors.innerText = "Deep Purple"
-    left2.classList.add('dpurpl1')
+    left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840578")`    
 } 
 
 gold.onclick = () => {
-    colors.innerText = "Gold"
-    left2.classList.add('gold1')
+    left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840519")`
 }
 
 silver.onclick = () => {
-    colors.innerText = "Silver"
-    left2.classList.add('silver1')
-
+    left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840488")`    
 }
 
 black.onclick = () => {
-    colors.innerText = "Space Black"
-    left2.classList.add('black1')
+    left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840510")`
+}
 
+
+// Leave
+purple.onmouseleave = () => {
+    if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840578")`) {
+        colors.innerText = " - Deep Purple"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840519")`) {
+        colors.innerText = " - Gold"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840488")`) {
+        colors.innerText = " - Silver"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840510")`) {
+        colors.innerText = " - Space Black"
+    }
+} 
+
+gold.onmouseleave = () => {
+    if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840578")`) {
+        colors.innerText = " - Deep Purple"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840519")`) {
+        colors.innerText = " - Gold"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840488")`) {
+        colors.innerText = " - Silver"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840510")`) {
+        colors.innerText = " - Space Black"
+    }
+}
+
+silver.onmouseleave = () => {    
+    if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840578")`) {
+        colors.innerText = " - Deep Purple"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840519")`) {
+        colors.innerText = " - Gold"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840488")`) {
+        colors.innerText = " - Silver"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840510")`) {
+        colors.innerText = " - Space Black"
+    }
+}
+
+black.onmouseleave = () => {
+    if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840578")`) {
+        colors.innerText = " - Deep Purple"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840519")`) {
+        colors.innerText = " - Gold"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840488")`) {
+        colors.innerText = " - Silver"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840510")`) {
+        colors.innerText = " - Space Black"
+    }
 }
 
 
 
 const next = document.querySelector('.next') 
+const prev = document.querySelector('.prev') 
 
-const point1 = document.querySelector('.point1')
-const point2 = document.querySelector('.point2')
-
+// Next
 next.onclick = () => {
-        left2.classList.add('dpurpl2')
-
-    if(left2.classList.contains('gold1')) {
-        left2.classList.remove('gold1')
-        left2.classList.add('gold2')
-    } 
-    if(left2.classList.contains('silver1')) {
-        left2.classList.remove('silver1')
-        left2.classList.add('silver2')
-    }
-
-    if(left2.classList.contains('black1')) {
-        left2.classList.remove('black1')
-        left2.classList.add('black2')
-    }
-
-    if(next.classList.contains('prev')) {
-        next.classList.remove('prev')
-        point1.style.backgound = '#9a9a9a'
-    } else {
-        next.classList.add('prev')
-        point2.style.backgound = '#444444'
-    }   
+    if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840578")`) {
+        left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple_AV1_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660754251868")`  
+        next.style.display = "none"
+        prev.style.display = "block"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840519")`) {
+        left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold_AV1_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660754254250")`
+        next.style.display = "none"
+        prev.style.display = "block"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840488")`) {
+        left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver_AV1_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660754253990")`
+        next.style.display = "none"
+        prev.style.display = "block"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840510")`) {
+        left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack_AV1_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660754254241")`
+        next.style.display = "none"
+        prev.style.display = "block"
+    }  
 }
 
-left2.onscroll = () => {
-    
+
+// Previous
+prev.onclick = () => {
+    if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple_AV1_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660754251868")`) {
+        left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840578")`         
+        prev.style.display = "none"
+        next.style.display = "block"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold_AV1_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660754254250")`) {
+        left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840519")`
+        prev.style.display = "none"
+        next.style.display = "block"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver_AV1_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660754253990")`) {
+        left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840488")`   
+        prev.style.display = "none"
+        next.style.display = "block"
+    } else if(left2.style.backgroundImage === `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack_AV1_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660754254241")`) {
+        left2.style.backgroundImage = `url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703840510")`
+        prev.style.display = "none"
+        next.style.display = "block"
+    }
 }
