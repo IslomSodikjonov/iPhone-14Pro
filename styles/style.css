@@ -258,3 +258,159 @@ img {
 .circles:hover {
     scale: 1.1;
 }
+
+
+/* Mac */
+.super {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 24px;
+}
+
+.macbook {
+    transition: 500s;
+}
+
+.macdef {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.macPro {
+    width: 680px;
+    height: 290px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left3 {
+    width: 312px;
+    height: 290px;
+    align-items: start;
+}
+
+.macname {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.maccolor {
+    color: #0071E3;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.maccosts {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.choosemac {
+    margin: 0 auto;
+    width: 321px;
+    margin-top: 75px;
+    margin-bottom: 135px;
+}
+
+.chosMacColor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.silver {
+    border: none;
+    width: 155px;
+    border-radius: 10px;
+    background: #CFE7FF;
+    color: #797979;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 0px;
+    text-align: center;
+    transition: .5s;
+}
+
+.spacegrey {
+    width: 155px;
+    border: none;
+    border-radius: 10px;
+    background: #0071E3;    
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 0px;
+    text-align: center;
+    transition: .5s;
+}
+
+#macpro:hover {
+    scale: 1.05;
+}
+
+.macstorage1 {
+    border-radius: 10px;
+    border: 2px solid #007FFF;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 7px;
+    transition: 200ms;
+}
+
+.macstorage {
+    border-radius: 10px;
+    border: 2px solid #CFE7FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 7px;
+    transition: 200ms;
+}
+
+.macsize {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.costsize{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.macsize2 {
+    border: 2px solid #007FFF;
+}
