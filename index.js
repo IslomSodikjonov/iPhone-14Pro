@@ -137,3 +137,53 @@ prev.onclick = () => {
         next.style.display = "block"
     }
 }
+
+
+// modal 
+let modal = document.querySelector('.modal')
+let modal_bg = document.querySelector('.modal_bg')
+let linkmodal = document.querySelector('.deallink')
+
+let exit = document.querySelector('.exit')
+
+linkmodal.onclick = () => {
+    modal.style.display = 'block'
+    modal_bg.style.display = 'block'
+}
+
+exit.onclick = () => {
+    modal.style.display = 'none'
+    modal_bg.style.display = 'none'
+}
+
+modal_bg.onclick = () => {
+    modal.style.display = 'none'
+    modal_bg.style.display = 'none'
+}
+
+
+let down1 = document.querySelector('#downiph1')
+let down2 = document.querySelector('#downiph2')
+let hide1 = document.querySelector('#hide1')
+let hide2 = document.querySelector('#hide2')
+
+
+
+down1.onclick = () => {
+    if(hide1.style.display === 'block') {
+        hide1.style.display = 'none'     
+    } else {
+        hide1.style.display = 'block'
+    }
+    
+
+}
+
+down2.onclick = () => {
+    if(hide2.style.display === 'block') {
+        hide2.style.display = 'none'     
+    } else {
+        hide2.style.display = 'block'
+    }
+}
+
